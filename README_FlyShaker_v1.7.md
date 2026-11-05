@@ -2,8 +2,6 @@
 
 Fly Shaker is an affordable, robust system for researchers to conduct sleep deprivation assays on drosophila melanogaster (fruit flies). It integrates automated mechanical stimulation, continuous camera imaging, and computer-assisted activity monitoring to investigate sleep, wakefulness, and behavioral responses in experimental populations. Designed primarily for a Raspberry Pi 5 with an ESP32-controlled shaker, Fly Shaker provides a graphical interface for configuring experiments, calibrating wells and motion thresholds, tracking activity, and generating reproducible datasets. A Windows demonstration mode is available without physical hardware.
 
-> **Version:** 1.7. Hardware behavior has not yet been validated on the Raspberry Pi/ESP32 for this build. In particular, burst detection depends on matching the ESP32's actual serial messages. Automated headless tests pass, but GUI and hardware testing remain necessary.
-
 ## Experiment Files and Data Organization
 
 Fly Shaker creates a separate `expXXXXX` directory for each experiment under the configured output root (`~/FS_IMG` by default). Unlike a per-well `.npy` recording system, this version stores sequential PNG images and CSV-based per-well measurements.
